@@ -11,21 +11,21 @@ Team 7-eleven : 김유진  문길호  안소윤  이정민
 Team Communication : Discord , Notion
 
 ## Design
-##### Home, Channel, Video 3가지 화면으로 구성
+#### Home, Channel, Video 3가지 화면으로 구성
 
 <img src="https://github.com/jmlee0527/Youtube-Clone/assets/115601680/c4ba7602-f263-4d62-9886-c2f2825c8d8f.png" width="300" height="150"/>
 <img src="https://github.com/jmlee0527/Youtube-Clone/assets/115601680/2e2238ca-a424-4e26-9456-618eac39a168.png" width="300" height="150"/>
 <img src="https://github.com/jmlee0527/Youtube-Clone/assets/115601680/76c1503c-3e98-4b2e-8044-00f632be139f.png" width="300" height="150"/>
 
 
-##### Figma를 활용한 HTML 구조 작성 및 CSS 디자인 작업
+#### Figma를 활용한 HTML 구조 작성 및 CSS 디자인 작업
 <img width="300" height="150" alt="image" src="https://github.com/jmlee0527/Youtube-Clone/assets/115601680/c99f876a-6d31-42cc-8f29-f14503f5868c">
 <img width="300" height="150" alt="image" src="https://github.com/jmlee0527/Youtube-Clone/assets/115601680/f237d1b6-3ccb-4d25-a982-7b11f54a7fd0">
 <img width="300" height="150" alt="image" src="https://github.com/jmlee0527/Youtube-Clone/assets/115601680/8303fe8f-1f62-4914-b8b6-c492195188e5">
 
 
 
-##### 주요 기능
+#### 주요 기능
 |Home|Channel|Video|
 |-------------|--------------|-------------|
 |API 통해 영상 목록 불러오기<br>상단 검색 기능, 음성 인식 검색 기능<br>영상 호버 자동 재생 기능<br>로고, HOME 버튼 클릭 시 Redirection 기능<br>왼쪽 사이드바 슬라이드 및 hidden 기능|채널 화면 내 검색 기능<br>구독 버튼 동작 기능<br>인기 동영상 노출 기능|구독,좋아요,댓글 기능<br>우측 영상 목록 태그에 따른 영상 노출<br>AI 유사도 측정에 따른 추천 영상 기능|
