@@ -35,7 +35,7 @@ Team Communication : Discord , Notion
 #### Home
 1. 동영상 목록 업로드
 
-    fetchData() 함수를 통해 비디오 정보를 가져오는 API를 호출하여 비디오 목록 데이터를 가져오고, 가져온 데이터를 JSON 형식으로 파싱하여 VideoList_data에 저장하고 fetchPromises 배열을 만들어서 각 비디오 정보를 병렬로 가져온 후 HTML 구조화 후 메인 컨테이너에 데이터를 추가합니다.
+    fetchData() 함수를 통해 비디오 정보를 가져오는 API를 호출하여 비디오 목록 데이터를 가져오고, 가져온 데이터를 JSON 형식으로 파싱하여 VideoList_data에 저장하고 fetchPromises 배열을 만들어서 각 비디오 정보를 병렬로 가져온 후 HTML 구조화 후 메인 컨테이너에 데이터를 추가
 <p align = center><img width="500" height="250" alt="image" src="https://github.com/jmlee0527/Youtube-Clone/assets/115601680/bba3a5e2-cf4b-479a-acd8-7cc79c6f9192"></p>
 
 
