@@ -1,0 +1,533 @@
+body {
+    /* background-color: #181818;     */
+    margin: 0px;    
+}
+
+/* 헤더와 사이드는 고정 된 상태라 나머지 Main 부분을 띄워서 겹치지 않게 조정 해당부분 수정 필요 */
+body > :not(header) {
+    padding-top: 55px;   
+    padding-left: 240px;
+}
+
+button {
+    border: 0;
+    background-color: transparent;
+}
+
+.main-section{
+    margin-top:24px;
+}
+/* 네비게이션 */
+nav{    
+    background: var(--background-color, #212121);
+    height: 56px;
+    flex-shrink: 0;
+    overflow: auto;   
+}
+
+/* .ham{
+    width: 24px;
+    height: 24px;
+} */
+
+.nav_yt_btn{
+    display: flex;    
+    align-items: center;    
+    width: 169px;
+    height: 56px;
+    left: 16px;
+    top: 0px;
+}
+
+#ham {
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.nav_search{
+    width: 470px;
+    height: 40px;
+    top: 8px;
+    left: 525px;
+    padding: 0px;
+    border: 1px;
+    /* gap: 4px; */
+}
+
+
+/* 사이드바 */
+.body{
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+    /* align-items: center; */
+    color: white;        
+}
+
+/* @media screen and (max-width: 100vw) {
+    .body {
+        max-width: 100vw;
+    }
+}  */
+
+.body > section {
+    padding-left: 2%;
+}
+
+
+/* 메인동영상 */
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #181818;
+    padding: 3%;
+}
+
+.video{
+    max-width: 1240px;
+    width: 100%;
+    height: auto;
+    position: static;
+    top: 0;
+    text-align: center;
+    /* z-index: -1; */
+}
+
+.primary{
+    margin-left: 24px;
+    padding-top: 24px;
+    padding-right: 24px;    
+}
+
+
+/* 동영상 정보 */
+.video_info{
+    display: flex;
+    /* align-items: center; */
+    flex-direction: column;
+}
+.video-title{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 18px;
+}
+
+.video-info-desc{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;    
+    margin-bottom: 10px;
+}
+
+.info-text{
+    width: 50%;
+    color: #aaa;
+}
+
+/* buttons 이미지 추가 필요 */
+.info-buttons {
+    width: 50%;
+    display: flex;
+    gap: 8px;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.info-buttons button {
+    /* height: 50px; */
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--border-color, hsl(0, 0%, 19%));
+    padding: 10px;
+    border-radius: 24px;
+}
+
+.info-buttons button span {
+    margin-left: 5px;
+    color: #FFFFFF;
+}
+
+/* 동영상 정보 */
+.channel-title{
+    display: flex;
+    justify-content: space-between; 
+    border-top: 1px solid #303030;
+    padding-top: 15px;
+}
+
+.user{
+    display: flex;
+    width: 40%;
+}
+
+.user-avatar{
+    cursor: pointer;
+    margin-right: 3%;
+}
+
+.user-avatar img{
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+}
+
+
+.user_name{
+    /* font-size: 14px; */
+    cursor: pointer;
+    width: 100%;
+    color: white;
+}
+
+.user-sub{
+    font-size: 12px;
+    width: 100%;
+    color: #aaa;
+}
+
+/* subscribers 버튼 추가 필요 */
+.subscribers{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+} 
+
+
+/* 동영상 정보 더보기 란 */
+.video-desc .desc{
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #303030;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+/* html show more 버튼 부분 체크박스형식으로 만들어놓음 */
+.video-desc .btn{
+    appearance: none;
+    border: none;
+    cursor: pointer;
+    /* padding: ;
+    margin: ; <--- padding margin값 부여해야함 */
+}
+
+/* showmore 누르기 전 후 */
+.video-desc .btn ::before{
+    content: 'show more';
+    font-size: 12px;
+    color:#aaa
+}
+
+.video-desc .btn :checked::before{
+    content: close;
+    font-size: 12px;
+    color:#aaa
+}
+
+.video-desc .desc:has(+ .video-desc .btn:checked){
+    -webkit-line-clamp: unset;
+}
+.info-buttons button:hover {
+    background-color: grey;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    border-radius: 24px;
+  }
+
+/* 댓글화면 */
+/*  html short오타 수정 */
+.sort-by{
+    display: flex;
+    margin-bottom: 24px;
+}
+.comment_cnt{
+    padding-right: 20px;
+    font-size: 16px;
+}
+
+/* sort-by btn 이미지 버튼 추가 필요 */
+.sort-by .sort{
+    margin-left: 50px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.sort-by button {
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sort-by button span {
+    margin-left: 3px;
+    color: #FFFFFF;
+}
+
+.comment{
+    display: flex;
+}
+
+
+/* 댓글입력창 */
+.comment-area {
+    border: none;
+    outline: none; 
+    border-bottom: 1px solid #303030;
+    height: 20px;
+    width: 100%;
+    padding-top: 10px;
+    font-size: inherit;
+    background: transparent;
+}
+.comment-area :focus {
+    border: none;
+    outline: none;
+    border-bottom: 3px solid white;
+    background: transparent;
+}
+
+
+/* 달린 댓글 */
+.comments{
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+}
+.comment{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-bottom: 10px;
+}
+
+.comments-pic img{
+    width: 35px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.comments_info{
+    display: flex;
+    flex-direction: column;
+    align-items: top;
+}
+
+.comment-area{
+    margin-left: 15px;
+    color: white;
+}
+
+.likeBtn,
+.dislikeBtn
+{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+}
+
+.likeBtn span, 
+.dislikeBtn span
+{
+    margin-left: 5px;
+    color: #FFFFFF;
+}
+
+
+/* html 이름 시간 나누어야함 */
+/* .comments-id{
+
+} */
+
+/* 버튼 이미지 추가  필요*/
+.comments-btn{
+    display: flex;
+    align-items: center;
+    margin: 8px 0;
+    padding: 5px 5px 5px 0px;
+    font-size: 12px;
+    color:#aaa
+}
+
+/* .secondary{
+    padding-top: 24px;
+    padding-right: 24px;
+}
+
+.sidebar_top, .sidebar_top2{
+    border-bottom: 1px solid #303030;
+} */
+
+#sidebar{
+    display: none;
+}
+
+
+/* 우측 동영상 목록 부분 */
+.other-video{
+    display: flex;
+    width: 40%;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left : 20px;
+}
+
+.other-list {
+    padding-top: 24px;
+}
+
+.other-list div{
+    display: flex;
+    text-decoration: none;
+    color: inherit;
+    margin-bottom: 10px;
+}
+
+.thumnail-text{
+    display: flex;
+    flex-direction: column;
+    margin-left: 3%;
+}
+
+.thumnail-title,
+.thumnail-channel{
+    cursor: pointer;
+}
+
+.thumnail-channel,
+.thumnail-views{
+    font-size: 12px;
+    color : #AAAAAA;
+}
+
+.top-menu{
+    display: flex;
+    width: 402px;
+    margin-left: 20px;
+    align-items: flex-start;
+}
+
+/* <!-- 0727 사항 : item1,item2 -> item 으로 통일--> */
+/* <!-- 0727 : img-> button 수정--> */
+.item1,
+.item2,
+.item3,
+.item4,
+.itme5{
+    display: inline-block;
+    padding: 0px 8px 0px 0px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+
+}
+.item1 button:hover,
+.item2 button:hover,
+.item3 button:hover,
+.item4 button:hover,
+.item5 button:hover{
+    background-color: grey;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    
+}
+.item1 button{
+    color : black;
+    border-radius: 24px;
+    border: 0.3px solid var(--gray-color, #AAA);
+    background: var(--border-color,white);
+    display: inline-flex;
+    padding: 12px 16px;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: center;
+    gap: 15px;
+}
+.item2 button,
+.item3 button,
+.item4 button,
+.item5 button
+{
+    color : white;
+    border-radius: 24px;
+    border: 0.3px solid var(--gray-color, #AAA);
+    background: var(--border-color, hsl(0, 0%, 19%));
+    display: inline-flex;
+    padding: 12px 16px;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: center;
+    gap: 15px;
+    
+}
+
+.button{
+    cursor: pointer;
+}
+
+.other-videos{
+    display: flex;
+}
+.other-video{
+    display: flex;
+    align-items: flex-start;
+}
+.other-video .other-video-thumbnail{
+    width: 168px;
+    height: 94px;
+}
+.other-video .other-video-thumbnail img{
+    width: 100%;
+    height: 100%;
+}
+
+.thumbnail-img video{
+    width: 168px;
+    height: 94px;
+    padding-bottom: 0%;
+    overflow: hidden;
+}
+
+/*0727 html : text부분 3단계로 분리(제목, 채널명, 날짜/조회수)*/
+.other-video .other-video-text{
+    display: flex;
+    width: 226px;
+    flex-direction: column;
+    align-items: baseline;
+}
+
+.other-video-text-title{
+    width: 202px;
+    color: var(--white-color, #FFF);
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.other-video-text-name{
+    flex: 1 0 0;
+    color: var(--gray-color, #AAA);
+    font-family: Roboto;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+}
+
+.other-video-text-day{
+    flex: 1 0 0;
+    color: var(--gray-color, #AAA);
+    font-family: Roboto;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+}

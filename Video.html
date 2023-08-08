@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Video</title>
+    <link rel="stylesheet" href="Reset.css" />
+    <link rel="stylesheet" href="Video.css" />
+    <link rel="stylesheet" href="Header.css" />
+    <link rel="stylesheet" href="Sidebar.css" />
+    <link rel="stylesheet" href="./common/common.css" />
+    <link rel="icon" href="./img/home/7-eleven-tab.png"/>
+  </head>
+  <body>
+    <!--상단부분-->
+    <header>
+      <div class="top">
+        <div class="top-left-icons top">
+          <a href="#" onclick="hamburger()"><img src="./img/header/hamburger.svg"/></a>
+          <a href="index.html"
+            ><img
+              src="./img/header/Youtube-Logo.svg"
+              class="youtube_logo"
+              onclick="redirectToHome()"
+          /></a>
+        </div>
+        <div class="top-middle-icons top">
+          <div class="searchbox top">
+            <input
+              type="search"
+              id="searchInput"
+              placeholder="  Search"
+              onkeydown="homeEnterkey(event)"
+            />
+            <a href="#">
+              <img src="./img/header/search.svg" class="search-icon"
+            /></a>
+          </div>
+          <a href="#"><img src="./img/header/mic.svg" class="mic-icon" /></a>
+          <!-- 검색 결과 출력을 위한 컨테이너 -->
+          <div class="search-result" id="searchResultContainer"></div>
+        </div>
+
+        <div class="top-right-icons top">
+          <a href="#"
+            ><img
+              src="./img/header/create.svg"
+              alt="profile_icon"
+              class="header-icon"
+          /></a>
+          <a href="#"
+            ><img
+              src="./img/header/apps.svg"
+              alt="profile_icon"
+              class="header-icon"
+          /></a>
+          <a href="#"
+            ><img
+              src="./img/header/notifications.svg"
+              alt="profile_icon"
+              class="header-icon"
+          /></a>
+          <a href="#">
+            <img src="./img/header/Profile-pic.svg" alt="profile_icon" class="user-icon" onclick="redirectTo7()" />
+          </a>
+        </div>
+      </div>
+    </header>
+    <section class="body">
+      <!-- 왼쪽 사이드바-->
+      <aside>
+        <div class="sidebar-body">
+          <div class="side1">
+            <span class="sidebar-text"
+              ><a href="#"
+                ><img
+                  src="./img/sidebar/home-fill.svg"
+                  onclick="redirectToHome()" /></a
+            ></span>
+            <span class="sidebar-text"
+              ><a href="#"><img src="./img/sidebar/explore.svg" /></a
+            ></span>
+            <span class="sidebar-text"
+              ><a href="#"><img src="./img/sidebar/subscriptions.svg" /></a
+            ></span>
+          </div>
+          <div class="side2">
+            <span id="show-more">
+              <span class="sidebar-text"
+                ><a href="#"><img src="./img/sidebar/library.svg" /></a
+              ></span>
+              <span class="sidebar-text"
+                ><a href="#"><img src="./img/sidebar/history.svg" /></a
+              ></span>
+              <span class="sidebar-text"
+                ><a href="#"><img src="./img/sidebar/yourVideos.svg" /></a
+              ></span>
+              <span class="sidebar-text"
+                ><a href="#"><img src="./img/sidebar/watchLater.svg" /></a
+              ></span>
+              <span class="sidebar-text"
+                ><a href="#"><img src="./img/sidebar/liked.svg" /></a
+              ></span>
+            </span>
+            <span class="sidebar-text" onclick="toggleSide2()"
+              ><a href="#"><img src="./img/sidebar/more.svg" /></a
+            ></span>
+          </div>
+          <div class="side3">
+            <span class="sidebar-text"
+              ><a href="#"
+                ><img src="./img/sidebar/subscription-title.svg" alt="" /></a
+            ></span>
+            <div class="subscription-user-img">
+              <span id="show-more-sub">
+                <a href="#"
+                  ><span class="sidebar-text"
+                    ><img src="./img/avatar/User-Avatar1.svg" alt="" />James
+                    Gouse</span
+                  ></a
+                >
+                <a href="#"
+                  ><span class="sidebar-text"
+                    ><img src="./img/avatar/User-Avatar2.svg" alt="" />Alan
+                    Cooper</span
+                  ></a
+                >
+                <a href="#"
+                  ><span class="sidebar-text"
+                    ><img src="./img/avatar/User-Avatar3.svg" alt="" />Marcus
+                    Levin</span
+                  ></a
+                >
+              </span>
+              <span class="sidebar-text" onclick="toggleSide3()"
+                ><a href="#"><img src="./img/sidebar/more.svg" alt="" /></a
+              ></span>
+            </div>
+          </div>
+          <div class="side4">
+            <span class="sidebar-text"
+              ><a href="#"
+                ><img src="./img/sidebar/more-from-youtube.svg" alt="" /></a
+            ></span>
+            <span class="sidebar-text"
+              ><a href="#"><img src="./img/sidebar/premium.svg" /></a
+            ></span>
+            <span class="sidebar-text"
+              ><a href="#"><img src="./img/sidebar/gaming.svg" /></a
+            ></span>
+            <span class="sidebar-text"
+              ><a href="#"><img src="./img/sidebar/live.svg" /></a
+            ></span>
+            <span class="sidebar-text"
+              ><a href="#"><img src="./img/sidebar/sports.svg" /></a
+            ></span>
+          </div>
+          <div class="side5">
+            <span class="sidebar-text"
+              ><a href="#"><img src="./img/sidebar/settings.svg" /></a
+            ></span>
+            <span class="sidebar-text"
+              ><a href="#"><img src="./img/sidebar/reporthistory.svg" /></a
+            ></span>
+            <span class="sidebar-text"
+              ><a href="#"><img src="./img/sidebar/help.svg" /></a
+            ></span>
+            <span class="sidebar-text"
+              ><a href="#"><img src="./img/sidebar/sendfeedback.svg" /></a
+            ></span>
+          </div>
+        </div>
+      </aside>
+      <section class = "main-section">
+        <!---->
+        <main id="main-video">
+          <!--메인 동영상-->
+        </main>
+
+        <section class="video-channel">
+          <!--동영상 정보-->
+          <div class="channel">
+            <div class="channel-title">
+              <div class="user">
+                <div class="user-avatar">
+                  <img
+                    onclick="redirectToChannel(event)"
+                    src="./img/avatar/Loading-Avartar.svg"
+                    alt="User Avatar"
+                  />
+                </div>
+                <div class="user-profile">
+                  <div class="user_name" onclick="redirectToChannel(event)">
+                    Marcus Levin
+                  </div>
+                  <div class="user_sub">1.2M subscribers</div>
+                </div>
+              </div>
+              <div class="subscribers">
+                <img src="./img/video/Subscribes-Btn.svg" alt="Subscribe" />
+              </div>
+            </div>
+            <div class="video-desc">
+              <div class="desc">이러저러해서 저러저저 합니다.</div>
+              <!-- Video.css 클래스 변경 해야함 -->
+              <input type="checkbox" class="btn" />
+            </div>
+          </div>
+        </section>
+        <section>
+          <!--댓글 화면-->
+          <div class="comment-desc">
+            <div class="sort-by">
+              <div class="comment-cnt">댓글 0개</div>
+              <button>
+                <img src="./img/video/sort.svg" alt="" /><span>SORT BY</span>
+              </button>
+            </div>
+            <div class="comment">
+              <div class="comment-pic">
+                <img src="./img/avatar/User-Avatar.svg" alt="User Avatar" />
+              </div>
+              <input
+                class="comment-area"
+                type="text"
+                placeholder="Add a comment..."
+              />
+            </div>
+          </div>
+
+          <div class="comments">
+            <div class="comment">
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <aside class="other-list">
+        <!--우측 동영상 목록-->
+        <div class="top-menu">
+          <div class="item1">
+            <button class="button" id="button1" onclick="changeBackground(1)">전체</button>
+          </div>
+          <div class="item2">
+            <button class="button" id="button2" onclick="changeBackground(2)"></button>
+          </div>
+          <div class="item3">
+            <button class="button" id="button3" onclick="changeBackground(3)"></button>
+          </div>
+          <div class="item4">
+            <button class="button" id="button4" onclick="changeBackground(4)"></button>
+          </div>
+          <div class="item5">
+            <button class="button" id="button5" onclick="changeBackground(5)">Ai 추천</button>
+          </div>
+        </div>
+
+        <div class="other-videos">
+          <div class="other-video"></div>
+        </div>
+      </aside>
+    </section>
+  </body>
+  <script src="./js/Video.js"></script>
+  <script src="./js/Sidebar.js"></script>
+  <script src="./js/Header.js"></script>
+</html>

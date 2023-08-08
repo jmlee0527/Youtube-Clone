@@ -1,0 +1,93 @@
+/* list 태그 span 변경으로 인한 list css 삭제 */
+
+/* width 240px로 변경
+유튜브 페이지 참조 */
+
+.sidebar-body{
+    background-color: #212121;  
+    position: fixed; /* 요소를 고정시킴 */
+    left: 0; /* 화면 상단에 고정 */    
+    width: 240px;
+    height: 100vh;
+    /*최대 확대 최소 축소 시 배경색 유지  */
+    overflow: hidden;/* 세로 스크롤바 숨기기 */
+    z-index: 1;
+    transform: translatex(0px);
+    transition: transform 0.5s ease-in-out;
+}
+
+.sidebar-body.active{
+    width: 240px;
+    height: 100vh;
+    transform: translatex(-240px);
+    transition: transform 0.5s ease-in-out;
+}
+
+
+/* .sidebar-body 태그 스크롤바 전체 스타일 */
+.sidebar-body:hover {
+    overflow: scroll;/* 세로 스크롤바 보이기 */
+}
+
+.sidebar-body::-webkit-scrollbar {
+    width: 6px; /* 스크롤바 너비 */
+    height: 6px;    
+}
+  
+/* .sidebar-body 태그 스크롤바 트랙 스타일 (배경) */
+.sidebar-body::-webkit-scrollbar-track {
+    background-color: #212121; /* 스크롤바 트랙 색상 */
+}
+  
+  /* .sidebar-body 태그 스크롤바 쓰는 부분 (버튼) 스타일 */
+.sidebar-body::-webkit-scrollbar-thumb {
+    background-color: #888; /* 스크롤바 버튼 색상 */
+    border-radius: 3px; /* 스크롤바 버튼 모서리 둥글게 */
+}
+/* 사이드바의 이미지들 hover시 색상 변경 */
+.sidebar-body div span a img:hover {
+    background-color: #303030;    
+}
+
+#show-more-sub a:hover{
+    background-color: #303030;    
+}
+
+#show-more-sub{
+    display: flex;    
+    flex-direction: column;     
+    align-items: center;    
+    justify-content: flex-start;
+    height: auto;
+}
+
+.sidebar-text {   
+    font-family: 'Roboto';
+    font-size: 14.5px;
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    /* font-weight: lighter; */
+}
+
+#show-more-sub a{
+    width: 224px;
+    height: 48.09px;
+    display: flex; /* 링크 안의 내용들을 가운데로 정렬하기 위해 추가 */
+    align-items: center; /* 링크 안의 내용들을 수직 가운데 정렬하기 위해 추가 */     
+    padding-left: 55px;
+    color: white;
+    text-decoration: none;    
+    justify-content: space-between;    
+}
+
+#show-more-sub a img{
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;    
+    margin-right: 20px;
+}
+
+.subscription-user-img{
+    width: 224px;
+}
