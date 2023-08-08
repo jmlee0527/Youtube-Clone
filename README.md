@@ -24,22 +24,12 @@ Team Communication : Discord , Notion
 <img width="300" height="150" alt="image" src="https://github.com/jmlee0527/Youtube-Clone/assets/115601680/8303fe8f-1f62-4914-b8b6-c492195188e5">
 
 
-#### Home
-- API 통해 영상 목록 불러오기
-- 상단 검색 기능, 음성 인식 검색 기능
-- 영상 호버 자동 재생 기능
-- 로고, HOME 버튼 클릭 시 Redirection 기능
-- 왼쪽 사이드바 슬라이드 및 hidden 기능
 
-#### Channel
-- 채널 화면 내 검색 기능
-- 구독 버튼 동작 기능
-- 인기 동영상 노출 기능
+##### 주요 기능
+|Home|Channel|Video|
+|-------------|--------------|-------------|
+|API 통해 영상 목록 불러오기<br>상단 검색 기능, 음성 인식 검색 기능<br>영상 호버 자동 재생 기능<br>로고, HOME 버튼 클릭 시 Redirection 기능<br>왼쪽 사이드바 슬라이드 및 hidden 기능|채널 화면 내 검색 기능<br>구독 버튼 동작 기능<br>인기 동영상 노출 기능|구독,좋아요,댓글 기능<br>우측 영상 목록 태그에 따른 영상 노출<br>AI 유사도 측정에 따른 추천 영상 기능|
 
-#### Video
-- 구독,좋아요,댓글 기능
-- 우측 영상 목록 태그에 따른 영상 노출
-- AI 유사도 측정에 따른 추천 영상 기능
 
 ## Implementation
 #### Home
@@ -106,7 +96,7 @@ Team Communication : Discord , Notion
   -> 초기 작성한 코드 구조를 유지하는 방식으로 수정 과정
 
 ## Result
-HTML,CSS,Javascript 를 활용한 기존 유튜브의 주요 기능 구현 완료
+기존 유튜브의 주요 기능 구현 완료
 
 ##### [Home]
 <p align = center><img width="700" height = "350" alt="image" src="https://github.com/jmlee0527/Youtube-Clone/assets/115601680/3609ae43-f601-4d7e-ba7c-02468342a140"></p>
