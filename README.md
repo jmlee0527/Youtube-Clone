@@ -26,10 +26,11 @@ Team Communication : Discord , Notion
 
 
 #### 주요 기능
+<p align=center>
 |Home|Channel|Video|
 |-------------|--------------|-------------|
 |API 통해 영상 목록 불러오기<br>상단 검색 기능, 음성 인식 검색 기능<br>영상 호버 자동 재생 기능<br>로고, HOME 버튼 클릭 시 Redirection 기능<br>왼쪽 사이드바 슬라이드 및 hidden 기능|채널 화면 내 검색 기능<br>구독 버튼 동작 기능<br>인기 동영상 노출 기능|구독,좋아요,댓글 기능<br>우측 영상 목록 태그에 따른 영상 노출<br>AI 유사도 측정에 따른 추천 영상 기능|
-
+</p>
 
 ## Implementation
 #### Home
