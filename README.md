@@ -1,8 +1,10 @@
 # Youtube Clone Coding
+
+
 ## Introduction
 Project Title : Youtube Clone Coding
 
-Goal : HTML,CSS,Javascript를 활용하여 기존 유튜브 디자인/기능 과 유사하게 개발하여 Front의 기본 역량 향상 및 팀 프로젝트 역량 향상
+Goal : HTML,CSS,Javascript를 활용한 클론코딩을 통한 Front의 기본 역량 향상 및 팀 프로젝트 역량 향상
 
 
 Team 7-eleven : 김유진  문길호  안소윤  이정민
